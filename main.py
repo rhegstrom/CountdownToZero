@@ -17,7 +17,7 @@ print out the number of steps required for the integers 5 through 20
 """
 
 
-def compute(n):  
+def compute(n):
     seq = [n,]
     
     while n != 1:
@@ -26,13 +26,14 @@ def compute(n):
             n = 3 * n + 1 
         else:
             # Even
-            n = n // 2   # does floor division(ignore remainder)
+            n = int(n / 2)
             
         seq.append(n)
     
     return seq
 
 
+# Print out the number of steps required for the integers 5 through 20
 for i in range(5, 21):
     seq = compute(i)
     
