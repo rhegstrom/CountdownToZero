@@ -16,7 +16,6 @@ it took 14 steps
 print out the number of steps required for the integers 5 through 20
 """
 
-
 def compute(n):
     seq = [n,]
     
@@ -38,10 +37,3 @@ for i in range(5, 21):
     seq = compute(i)
     
     print(f'i={i:2}, steps={len(seq)-1:2}, {seq}')
-
-
-
-
-    
-            
-            
